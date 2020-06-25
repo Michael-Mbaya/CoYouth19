@@ -2,26 +2,73 @@
     box-sizing: border-box;
 }
 
-body{
-    margin: 0;
+.prevent-intro{
+  margin-bottom: 20px;
 }
 
-.img-row {
-    display: flex;
-    flex-wrap: wrap;
-    padding:2px 2px 2px 2px;
-    height: 600px;
-    margin: 5px;
-    overflow: hidden;
+#no-cure,#outro{
+  text-align: center;
+}
+
+.prevent-intro>h1,.prevent-intro>p{
+  margin: 5px;
+  padding: 2px;
+  text-align: justify;
   }
 
-  iframe{
-    padding: 10px;
-    margin: 5px 5px 5px 5px;
+.prevent-intro>h2{
+  text-decoration: none;
+  margin: 5px;
+  padding: 2px;
+  text-align: justify;
+}
+
+.prevent-intro>ul{
+  margin: 5px 5px 5px 20px;
+  padding: 5px;
+  padding-left: 25px;
+}
+
+.measure>img{
+  margin: 2px 1px 2px 1px;
+  vertical-align: middle;
+  width: 100%;
+  height: 200px;
+  flex: 1;
+  max-width: 25%;
+  padding: 2px;
+  overflow: hidden;
+}
+
+.measure{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 5px;
+  padding: 2px;
+}
+
+ @media screen and (max-width: 800px) {
+      .measure>img {
+        flex: 100%;
+        max-width: 100%;
+      }
   }
+
+ 
 
 /* Create four equal columns that sits 
     next to each other */
+.img-row {
+   display: flex;
+   flex-wrap: wrap;
+   padding:2px 2px 2px 2px;
+   height: auto;
+   margin: 2px 2px 2px 2px;
+   overflow: hidden;
+   width: 100%;
+}
+
 .img-col {
     flex: 25%;
     max-width: 25%;
@@ -31,28 +78,28 @@ body{
   }
   
 .img-col>img {
-    margin: 2px 2px 2px 2px;
-    vertical-align: middle;
-    width: 100%;
-    height: 200px;
+  margin: 2px 2px 2px 2px;
+  vertical-align: middle;
+  width: 100%;
+  height: 200px;
   }
   
   /* Responsive layout - makes a
      two column-layout
      instead of four columns */
-  @media screen and (max-width: 800px) {
-    .img-col {
-      flex: 50%;
-      max-width: 50%;
+     @media screen and (max-width: 800px) {
+      .img-col {
+        flex: 50%;
+        max-width: 50%;
+      }
     }
-  }
-  
-  /* Responsive layout - makes the two columns
-     stack on top of each other instead of next
-     to each other */
-  @media screen and (max-width: 600px) {
-    .img-col {
-      flex: 100%;
-      max-width: 100%;
+    
+    /* Responsive layout - makes the two columns
+       stack on top of each other instead of next
+       to each other */
+    @media screen and (max-width: 600px) {
+      .img-col {
+        flex: 100%;
+        max-width: 100%;
+      }
     }
-  }
