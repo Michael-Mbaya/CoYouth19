@@ -1,9 +1,13 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
     background-color:lightgrey;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-  }
+}
   
 h1,h2{
   text-decoration: underline;
@@ -44,7 +48,7 @@ h1,h2{
         when being selected/clicked on */
    .topnav> a:active {
     background-color: white;
-    color: blue;
+    color:green;
   }
   
   /* style the nav bar with media screen sizes*/
@@ -66,6 +70,7 @@ h1,h2{
     position: static;
     bottom: 0;
     left: 0;
+    margin-top: 0px;
 }
 
 .column{
@@ -84,7 +89,7 @@ h1,h2{
 }
 
  .column>h2,.column>p{
-   color: white;
+   color: white; 
  }
  
   #content-1 {
@@ -94,6 +99,7 @@ h1,h2{
     flex: 1;
     padding: 10px;
     margin-left: 0;
+    text-align: center;
 }
 
 #content-2 {
@@ -116,10 +122,13 @@ h1,h2{
   flex: 1;
   margin-right: 0;
   padding: 10px;
+  text-align: center;
 }
 
-#content-1>a:link{color: blue;}
-#content-1>a:visited{color: palevioletred;}
+#content-1>a:link{
+  color: blue;
+}
+#content-1>a:visited{color: purple;}
 #content-1>a:hover{color: white;}
 #content-1>a:active{color: red;}
 
